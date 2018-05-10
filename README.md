@@ -9,10 +9,38 @@ npm install each
 
 Usage:
 ------
+```
+    const each = require('each');
 
-    require('each');
+    // Objects
+    const obj = {
+      key1: 'value1',
+      key2: 'value2',
+    };
 
-    
+    for (const [key, val] of each(obj)) {
+      // 1st iteration: key is 'key1', val is 'value1'
+      // 2nd iteration: key is 'key2', val is 'value2'
+    }
+
+    // Arrays
+    const arr = ['value0', 'value1'];
+
+    for (const [val, index] of each(obj)) {
+      // 1st iteration: val is 'value0', index is 0
+      // 2nd iteration: val is 'value1', index is 1
+    }
+
+    // Strings
+    const str = 'abcd';
+
+    for (const [char, pos] of each(obj)) {
+      // 1st iteration: char is 'a', pos is 0
+      // 2nd iteration: char is 'b', pos is 1
+      // 3rd iteration: char is 'c', pos is 2
+      // 4th iteration: char is 'd', pos is 3
+    }
+``
 
 The MIT License (MIT)
 ---------------------

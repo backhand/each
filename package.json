@@ -1,6 +1,6 @@
 {
   "name": "@backhand/each",
-  "description": "DESCRIPTION",
+  "description": "Easy iteration over objects and other things",
   "version": "0.1.0",
   "author": "Frederik Hannibal <frederik@backhand.dk>",
   "repository": {
